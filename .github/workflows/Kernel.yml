@@ -1,11 +1,11 @@
-name: "Build Dark Ages kernel on darky."              
+name: "Build kernel"              
 on:
   push:
     branches: main                                   
   workflow_dispatch:                                  
 jobs:
   build:
-    name: "Build Dark Ages kernel"
+    name: "Build kernel"
     runs-on: ubuntu-latest
     steps:
     - name: "Checkout kernel source"                  
