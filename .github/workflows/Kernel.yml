@@ -6,9 +6,8 @@ on:
 jobs:
   build:
     name: "Build kernel"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
-    - run: "sudo echo deb http://dk.archive.ubuntu.com/ubuntu/ bionic main universe>>/etc/apt/sources.list && sudo apt update"
     - name: "Checkout kernel source"                  
       uses: actions/checkout@v2
       with:
