@@ -21,7 +21,7 @@ jobs:
       uses: lemniskett/android-kernel-actions@master
       with:
         arch: arm64                                   
-        compiler: gcc/9                               
+        compiler: gcc/6                               
         defconfig: k61v1_64_bsp_defconfig                     
         image: Image.gz-dtb                           
 
