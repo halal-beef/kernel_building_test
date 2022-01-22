@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: "Checkout kernel source"                  
       uses: actions/checkout@v2
+      with:
+        repository: "mediatek-android-development/android_kernel_mediatek_mt6761-62-4.9"
     - name: "Checkout zipper"                         
       uses: actions/checkout@v2
       with:
@@ -20,7 +22,7 @@ jobs:
       with:
         arch: arm64                                   
         compiler: gcc/9                               
-        defconfig: vince_defconfig                    
+        defconfig: k61v1_64_bsp_defconfig                     
         image: Image.gz-dtb                           
 
 
